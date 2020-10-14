@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Curso Completo do Desenvolvedor Web</title>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	</head>
+	<body>
+		<form method="POST" action="form.php">
+			<div class="form-group">
+				<label for="nome">Nome</label>
+				<input type="text" name="nome" id="nome" class="form-control" placeholder="Digite seu nome" required autofocus>
+			</div>
+			<div class="form-group">
+				<label for="email">E-mail</label>
+				<input type="text" name="email" id="email" class="form-control" placeholder="seu@email.com.br" required>
+			</div>
+			<div class="form-group">
+				<label for="nascimento">Nascimento</label>
+				<input type="date" name="nascimento" id="nascimento" class="form-control" required disabled>
+			</div>
+			<div class="form-group">
+				<label>Sexo: </label>
+				<input type="radio" name="sexo" id="masculino">
+				<label for="masculino">Masculino</label>
+				<input type="radio" name="sexo" id="feminino">
+				<label for="feminino">Feminino</label>
+			</div>
+			<div class="form-group">
+				<label for="li">Eu li e aceito: </label>
+				<input type="checkbox" name="li" id="li" required checked>
+			</div>
+			<div class="form-group">
+				<label for="conf">O quanto você confia no site? </label>
+				<input type="range" name="conf" id="conf" min="0" max="100">
+			</div>
+			<div class="form-group">
+				<label for="meter">Bateria: </label>
+				<meter min="0" max="100" value="12" low="15">50</meter>
+			</div>
+			<div class="form-group">
+				<label for="meter">Carregando: </label>
+				<progress min="0" max="100" value="80">80%</progress>
+			</div>
+			<div class="form-group">
+				<label for="ano">Ano de fabricação: </label>
+				<input type="number" name="ano" id="ano" min="1920" max="2016" value="2016" class="form-control">
+			</div>
+			<div class="form-group">
+				<label for="cor">Escolha sua cor favorita: </label>
+				<input type="color" name="cor" id="cor" >
+			</div>
+			<div class="form-group">
+				<label for="url">URL: </label>
+				<input type="url" name="url" id="url" class="form-control">
+			</div>
+			<div class="form-group">
+				<label for="estados">Estado: </label>
+				<select name="estados" id="estados" class="form-control">
+					<option value="SP">São Paulo</option>
+					<option value="MG">Minas Gerais</option>
+					<option value="RJ">Rio de Janeiro</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="senha">Senha: </label>
+				<input type="password" name="senha" id="senha" class="form-control">
+			</div>
+			<div class="form-group">
+				<input type="text" list="navegadores">
+				<datalist id="navegadores">
+					<option value="Chrome">
+					<option value="Firefox">
+					<option value="Opera">
+				</datalist>
+			</div>
+			<div>
+				<button type="submit" class="btn btn-primary">Cadastrar</button>
+			</div>
+		</form>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+	</body>
+</html>
