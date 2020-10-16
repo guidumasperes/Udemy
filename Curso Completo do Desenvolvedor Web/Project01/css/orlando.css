@@ -128,9 +128,15 @@ header .header-black li a {
 	display: block;
 }
 
+#banner h1.efeito {
+	color: red;
+	font-size: 12em;
+}
+
 header #logotipo {
 	position: absolute;
 	top: 20px;
+	z-index: 3;
 }
 
 #menu {
@@ -146,6 +152,15 @@ header #logotipo {
 #menu li { /* Display "li's" inline-block already in the correct position */
 	display: inline-block;
 	font-family: "OpenSans";
+}
+
+#menu li.search {
+	width: 182px;
+	transition: 1s;
+}
+
+#menu li.search.active {
+	width: 300px;
 }
 
 #menu input {
@@ -184,6 +199,7 @@ header #logotipo {
 }
 
 #banner h1 {
+	transition: 1s;
 	color: #fff;
 	top: 300px;
 	position: relative;
@@ -234,6 +250,14 @@ header #logotipo {
 	color:#A7A7A7;
 	font-size: 18px;
 	font-family: 'OpenSans';
+}
+
+#news .thumbnails .item-inner {
+	padding: 10px;
+}
+
+#news .thumbnails .item-inner img {
+	width: 100%;
 }
 
 #estatisticas {
@@ -432,4 +456,8 @@ footer .list-socials {
 footer .list-socials li {
 	display: inline-block;
 	margin-right: 8px;
+}
+
+.video-player {
+    width: 60vw;
 }
