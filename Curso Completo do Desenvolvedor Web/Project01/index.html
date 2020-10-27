@@ -5,20 +5,24 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- For responsive -->
 		<title>Orlando City</title>
 		<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
 		<link rel="stylesheet" href="lib/owl.carousel2/dist/assets/owl.carousel.min.css">
 		<link rel="stylesheet" href="lib/owl.carousel2/dist/assets/owl.theme.default.min.css">
 		<link rel="stylesheet" href="css/orlando.css">
+		<link rel="stylesheet" href="css/orlando-mobile.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	</head>
 	<body>
 		<header> <!-- Mandatory for optimizing searches in search engines -->
-			<div class="container">
+			<div class="container conteiner-logo">
 				<img id="logotipo" src="img/orlando-logo.png" alt="Logotipo">
 			</div>
 			<div class="header-black">
 				<div class="container">
+					<button id="btn-bars" type="button"><i class="fa fa-bars"></i></button>
+					<button id="btn-search" type="button"><i class="fa fa-search"></i></button>
 					<ul class="float-right"> <!-- "pull-right" is deprecated on Bootstrap 4, so i changed to float-right -->
 						<li class="club-01"><a href="#"></a></li> <!-- Using sprite -->
 						<li class="club-02"><a href="#"></a></li>
@@ -78,6 +82,8 @@
 				<div class="row">
 					<hr> <!-- hr == horizontal row -->
 				</div>
+				<button id="btn-news-prev" type="button"><i class="fa fa-angle-left"></i></button>
+				<button id="btn-news-next" type="button"><i class="fa fa-angle-right"></i></button>
 				<div class="row thumbnails owl-carousel owl-theme">
 					<div class="item">
 						<div class="item-inner">
@@ -190,12 +196,12 @@
 			<div class="row row-light-grey">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-2 text-center">
+						<div class="col-md-2 text-center d-none d-sm-block">
 							<img class="logotipo" src="img/orlando-logo.png" alt="Logotipo">
 						</div>
 						<div class="col-md-10">
 							<div class="row row-cols">
-								<div class="col-md-4 col-popular-post">
+								<div class="col-md-4 col-popular-post d-none d-sm-block">
 									<h4>POPULAR POSTS</h4>
 									<ul class="list-unstyled">
 										<li>
@@ -208,7 +214,7 @@
 										</li>
 									</ul>
 								</div>
-								<div class="col-md-4 col-links">
+								<div class="col-md-4 col-links d-none d-sm-block">
 									<h4>LINKS</h4>
 									<ul class="list-unstyled">
 										<li><a href="#"><i class="fa fa-angle-right"></i>Tickets</a></li>
@@ -217,11 +223,11 @@
 									</ul>
 								</div>
 								<div class="col-md-4 col-get-in-touch">
-									<h4>GET IN TOUCH</h4>
-									<address>
+									<h4 class="d-none d-sm-block">GET IN TOUCH</h4>
+									<address class="d-none d-sm-block">
 										<i class="fa fa-map-marker"></i><span>618 E. South Street, Suite 510<br>Orlando, FL 32801</span>
 									</address>
-									<p><a href="tel:1855ORLCITY"><i class="fa fa-phone"></i>1.855.ORL.CITY</a></p>
+									<p class="d-none d-sm-block"><a href="tel:1855ORLCITY"><i class="fa fa-phone"></i>1.855.ORL.CITY</a></p>
 									<ul class="list-unstyled list-socials">
 										<li>
 											<a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
@@ -243,7 +249,7 @@
 				</div>
 			</div>
 			<div class="row row-dark-grey">
-				<div class="container">
+				<div class="container copyright-mobile">
 					<p class="float-left">Copyright © Orlando City Soccer 2016. All rights reserved.</p>
 					<p class="float-right text-purple">Created by HCODE in Udemy</p>
 				</div>

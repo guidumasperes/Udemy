@@ -24,4 +24,12 @@ $(document).ready(function(){
 			}
 		}
 	});
+	var owl = $('.owl-carousel');
+	owl.owlCarousel();
+	$('#btn-news-next').click(function() {
+    	owl.trigger('next.owl.carousel');
+	});
+	$('#btn-news-prev').click(function() {
+    owl.trigger('prev.owl.carousel');
+	});
 });

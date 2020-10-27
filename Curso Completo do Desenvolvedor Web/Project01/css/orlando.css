@@ -461,3 +461,7 @@ footer .list-socials li {
 .video-player {
     width: 60vw;
 }
+
+#btn-bars, #btn-search, #btn-news-prev, #btn-news-next {
+	display: none;
+}
